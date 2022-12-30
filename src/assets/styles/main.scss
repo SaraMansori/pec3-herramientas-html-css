@@ -9,6 +9,18 @@
 
 @import "variables";
 
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("../fonts/Montserrat.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontserratItalic";
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Italic.ttf") format("truetype");
+}
+
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
@@ -18,12 +30,20 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
+@tailwind base;
+@tailwind components;
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
 @import "layouts/home";
+@import "layouts/navbar";
+@import "layouts/reusables";
+
+@tailwind utilities;
 
 /**
  * Do NOT include anything else in this file!

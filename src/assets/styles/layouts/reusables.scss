@@ -1,0 +1,15 @@
+@layer components {
+  .artist-card {
+    @apply text-secondary-darkText bg-background-semiWhite break-words flex flex-col relative rounded-lg border  border-background-semiWhite;
+    &__body {
+      @apply p-4 flex-auto font-semibold leading-5;
+    }
+  }
+
+  .article_division {
+    @apply hidden md:block w-full h-[2px] bg-secondary-wheat border-none;
+  }
+  .listelement-icon {
+    @apply flex gap-6 items-baseline py-3 font-semibold;
+  }
+}

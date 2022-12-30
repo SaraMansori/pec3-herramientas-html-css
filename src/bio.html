@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <title>Parcels - Band</title>
+    </head>
+    <body>
+        <include src="./views/navbar.html"></include>
+        <main>
+            <article class="bg-background-dark text-background-semiWhite">
+                <div
+                    class="md:h-[45rem] md:grid md:grid-rows-2 md:grid-cols-1 p-3 md:p-0"
+                >
+                    <h1
+                        class="md:row-start-1 md:col-span-full text-secondary-wheat text-center text-transform: uppercase mb-16 text-6xl font-semibold z-10 self-end"
+                    >
+                        Biography
+                    </h1>
+                    <div
+                        class="md:row-start-2 md:col-start-1 justify-center flex gap-3 z-10 self-start place-self-center mb-3 font-semibold text-background-semiWhite"
+                    >
+                        <address class="not-italic">
+                            By
+                            <a rel="author" href="/">John Doe</a>
+                        </address>
+
+                        <time
+                            pubdate
+                            datetime="2011-08-28"
+                            title="August 28th, 2011"
+                            >28/11/22</time
+                        >
+                    </div>
+                    <picture
+                        class="md:row-span-full md:col-span-full md:h-[45rem] brightness-50"
+                    >
+                        <source
+                            srcset="./assets/images/Parcels_group.jpeg?as=webp"
+                            type="image/webp"
+                        />
+                        <img
+                            class="md:w-full h-full object-cover"
+                            src="./assets/images/Parcels_group.jpeg"
+                            alt="Parcels playing in a concert"
+                        />
+                    </picture>
+                </div>
+
+                <div
+                    class="flex flex-col gap-4 py-12 px-9 md:max-w-7xl md:mx-auto my-auto"
+                >
+                    <include src="./views/bioDesription.html"></include>
+
+                    <hr class="article_division" />
+
+                    <include src="./views/discography.html"></include>
+
+                    <hr class="article_division" />
+
+                    <section class="flex flex-col md:flex-row mt-8 gap-4">
+                        <div class="text-2xl md:w-4/12 font-semibold">
+                            The band members were involved in a host of musical
+                            projects together before the formation of Parcels,
+                            playing music together in and out of different bands
+                            since they were 13 years old.
+                        </div>
+                        <div class="md:w-8/12 font-medium mt-2">
+                            <p>
+                                They played in different groups experimenting
+                                with genres of funk, folk, metal and bluegrass.
+                            </p>
+                            <p class="mt-2">
+                                Serret and Crommelin were the only two members
+                                of Parcels who had not previously played music
+                                together Members Swain and Hetherington had
+                                formed as an acoustic folk duo named 'Louie and
+                                Patrick' releasing two digital albums via
+                                Bandcamp, 'We Thought A Kitten Might Lift Our
+                                Mother's Spirits' in April 2013 and 'We Are Not
+                                Convinced There Has Been Any Significant
+                                Improvement' in May 2014.
+                            </p>
+                            <p class="mt-2">
+                                Swain, Hetherington and non-Parcels members
+                                Merryn Boller and Nick Scales had formed as a
+                                roots group, uploading to national youth
+                                broadcaster Triple J's unearthed website as "The
+                                Sugar Spinners' in 2013. The Sugar Spinners won
+                                the 2013 BluesFest busking competition.
+                            </p>
+                        </div>
+                    </section>
+
+                    <picture class="mt-5">
+                        <source
+                            srcset="./assets/images/parcels_image.jpg?as=webp"
+                            type="image/webp"
+                        />
+                        <img
+                            src="./assets/images/parcels_image.jpg"
+                            alt="Picture of Juls from Parcels"
+                        />
+                    </picture>
+
+                    <section>
+                        <p class="font-semibold mt-2">
+                            In their final year of high school in 2014, the five
+                            boys, Swain, Hetherington, Hill, Serret and
+                            Crommelin, formed as Parcels. The story behind the
+                            name 'Parcels' differs from source to source.
+                            Consistently, the members report having taken the
+                            name from an old train sign that resided at Swain's
+                            parent's house. In one interview the sign is said to
+                            be seen in Swain's parent's pastry cafè. Another
+                            says that Swain stole the sign from their local
+                            train station and hung it in his basement.
+                        </p>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>

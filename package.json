@@ -2,7 +2,7 @@
   "name": "uoc-boilerplate",
   "version": "3.5.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "PEC 3 - Parcels",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
@@ -26,8 +26,8 @@
     "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Sara Mansori",
+    "email": "sara.mansori@uoc.edu"
   },
   "license": "MIT",
   "bugs": {
@@ -42,6 +42,10 @@
     "postcss-preset-env": "^7.8.1",
     "posthtml-include": "^1.7.4",
     "rimraf": "^3.0.2",
-    "sharp": "^0.29.1"
+    "sharp": "^0.29.1",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1"
   }
 }
